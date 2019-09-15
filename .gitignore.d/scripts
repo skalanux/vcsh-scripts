@@ -8,5 +8,6 @@
 !/.local/share/scripts/full-backup.back
 !/.local/share/scripts/guakesize.sh
 !/.local/share/scripts/launch-kitty.sh
+!/.local/share/scripts/remove_existing_files.sh
 !/.local/share/scripts/restore-gnome-shell.sh
 !/.local/share/scripts/tmux_new_or_attach.sh
