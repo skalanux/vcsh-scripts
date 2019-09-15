@@ -63,7 +63,7 @@ show-size-column=true
 show-hidden=false
 sidebar-width=209
 sort-column='modified'
-window-position=(359, 46)
+window-position=(2279, 46)
 sort-order='descending'
 location-mode='path-bar'
 sort-directories-first=true
@@ -287,7 +287,7 @@ icon-size=uint32 31
 activate-by-key=uint32 2
 onboarding-5=uint32 1
 font-size=uint32 31
-launcher-stats='{"kitty.desktop":1,"org.gnome.Terminal.desktop":7,"code.desktop":3,"spotify_spotify.desktop":1,"org.gnome.Cheese.desktop":1,"org.gnome.tweaks.desktop":7,"ca.desrt.dconf-editor.desktop":2}'
+launcher-stats='{"kitty.desktop":1,"org.gnome.Terminal.desktop":7,"code.desktop":3,"spotify_spotify.desktop":1,"org.gnome.Cheese.desktop":1,"org.gnome.tweaks.desktop":11,"ca.desrt.dconf-editor.desktop":2}'
 max-width-percentage=uint32 92
 onboarding-3=uint32 1
 never-show-onboarding=true
@@ -422,7 +422,7 @@ enable-animations=true
 icon-theme='Yaru'
 gtk-theme='Nordic'
 font-name='Open Sans 11'
-cursor-theme='Numix-Cursor'
+cursor-theme='Devecoop-Cursor'
 gtk-im-module='gtk-im-context-simple'
 document-font-name='Sans 11'
 monospace-font-name='Operator Mono Semi-Light 11'
@@ -479,7 +479,7 @@ number-format='automatic'
 target-currency=''
 
 [org/gnome/settings-daemon/peripherals/keyboard]
-numlock-state='off'
+numlock-state='on'
 
 [org/gnome/settings-daemon/peripherals/mouse]
 locate-pointer=true
