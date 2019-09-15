@@ -2,11 +2,42 @@
 release-check-time=uint32 1567695064
 
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/terminal/legacy/'
+saved-pathbar-path='/org/gnome/desktop/wm/preferences/focus-new-windows'
 window-width=800
 window-height=420
-saved-view='/org/gnome/terminal/legacy/'
+saved-view='/org/gnome/desktop/wm/preferences/focus-new-windows'
 window-is-maximized=true
+
+[apps/guake/general]
+window-tabbar=true
+history-size=1000
+window-halignment=0
+open-tab-cwd=true
+use-default-font=false
+use-scrollbar=true
+use-trayicon=true
+window-height=50
+window-width=100
+window-refocus=false
+use-popup=true
+display-n=0
+mouse-display=true
+max-tab-name-length=100
+quick-open-command-line='gedit %(file_path)s'
+abbreviate-tab-names=false
+compat-delete='delete-sequence'
+scroll-keystroke=true
+prompt-on-quit=true
+window-losefocus=false
+
+[apps/guake/style/font]
+allow-bold=false
+palette-name='Solarized Dark'
+style='Operator Mono Lig Light 10'
+palette='#000027273131:#D0D01B1B2424:#727289890505:#A5A577770505:#20207575C7C7:#C6C61B1B6E6E:#252591918585:#E9E9E2E2CBCB:#00001E1E2626:#BDBD36361212:#46465A5A6161:#525267676F6F:#707081818383:#58585656B9B9:#818190908F8F:#FCFCF4F4DCDC:#707081818383:#00001E1E2626'
+
+[apps/guake/style/background]
+transparency=90
 
 [apps/seahorse/windows/key-manager]
 width=687
@@ -123,16 +154,20 @@ ignore-phase2-ca-cert=false
 [org/gnome/shell]
 app-picker-view=uint32 0
 enable-hot-corners=false
-command-history=['code', 'terminator', 'arandr', 'gparted', 'synapse', 'kitty', 'retoques', 'atajos', 'gnome-terminal', 'pavucontrol', 'cheese', 'r']
+command-history=['code', 'terminator', 'arandr', 'gparted', 'synapse', 'retoques', 'atajos', 'gnome-terminal', 'pavucontrol', 'cheese', 'kitty', 'r']
 favorite-apps=@as []
 had-bluetooth-devices-setup=false
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'gcalc-search@wrowclif.org', 'gTile@vibou', 'dash-to-dock@micxgx.gmail.com', 'dash-to-panel@jderose9.github.com', 'CoverflowAltTab@palatis.blogspot.com', 'EasyScreenCast@iacopodeenosee.gmail.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'labeled_spaces@silverswift', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pomodoro@arun.codito.in', 'gnomenu@panacier.gmail.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'switcher@landau.fi']
 
 [org/gnome/shell/keybindings]
-open-application-menu=['<Super>F9']
 toggle-application-view=['']
-focus-active-notification=@as []
+switch-to-application-1=['']
+open-application-menu=['<Super>F9']
 toggle-overview=['']
+focus-active-notification=@as []
+switch-to-application-4=['']
+switch-to-application-3=['']
+switch-to-application-2=['']
 
 [org/gnome/shell/extensions/dash-to-dock]
 multi-monitor=false
@@ -196,7 +231,7 @@ first-run=false
 favorites-before-preferences=true
 
 [org/gnome/shell/extensions/auto-move-windows]
-application-list=['firefox.desktop:2', 'code.desktop:3', 'kitty.desktop:3']
+application-list=['firefox.desktop:2', 'code.desktop:3']
 
 [org/gnome/shell/extensions/gtile]
 show-toggle-tiling=['<Primary>Return']
@@ -252,7 +287,7 @@ icon-size=uint32 31
 activate-by-key=uint32 2
 onboarding-5=uint32 1
 font-size=uint32 31
-launcher-stats='{"kitty.desktop":1,"org.gnome.Terminal.desktop":7,"code.desktop":3,"spotify_spotify.desktop":1,"org.gnome.Cheese.desktop":1,"org.gnome.tweaks.desktop":5}'
+launcher-stats='{"kitty.desktop":1,"org.gnome.Terminal.desktop":7,"code.desktop":3,"spotify_spotify.desktop":1,"org.gnome.Cheese.desktop":1,"org.gnome.tweaks.desktop":7,"ca.desrt.dconf-editor.desktop":2}'
 max-width-percentage=uint32 92
 onboarding-3=uint32 1
 never-show-onboarding=true
@@ -335,23 +370,25 @@ two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/wm/keybindings]
 move-to-workspace-3=['<Shift><Super>periodcentered']
+switch-to-workspace-10=['']
 move-to-workspace-2=['<Shift><Super>quotedbl']
 close=['<Super>q']
 move-to-workspace-1=['<Shift><Super>exclam']
-switch-to-workspace-4=['<Alt>4']
-switch-to-workspace-3=['<Alt>3']
-switch-to-workspace-2=['<Alt>2']
-switch-to-workspace-1=['<Alt>1']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-1=['<Super>1']
 move-to-workspace-4=['<Shift><Super>dollar']
 
 [org/gnome/desktop/wm/preferences]
+focus-new-windows='strict'
 focus-mode='click'
-num-workspaces=4
-titlebar-font='Ubuntu 11'
-auto-raise=true
 button-layout=':minimize,maximize,close'
+titlebar-font='Ubuntu 11'
 action-double-click-titlebar='toggle-maximize'
 workspace-names=['Web', 'Code', 'Chat']
+num-workspaces=4
+auto-raise=true
 
 [org/gnome/desktop/calendar]
 show-weekdate=false
@@ -367,7 +404,7 @@ picture-uri='file:///usr/share/backgrounds/80s_Disco_Dingo_Simulation_by_Abubaka
 primary-color='#000000'
 
 [org/gnome/desktop/sound]
-theme-name='__custom'
+theme-name='Yaru'
 event-sounds=true
 allow-volume-above-100-percent=true
 
@@ -442,22 +479,21 @@ number-format='automatic'
 target-currency=''
 
 [org/gnome/settings-daemon/peripherals/keyboard]
-numlock-state='on'
+numlock-state='off'
 
 [org/gnome/settings-daemon/peripherals/mouse]
 locate-pointer=true
 
 [org/gnome/settings-daemon/plugins/color]
-night-light-last-coordinates=(-34.72711883988481, -58.413197599999997)
+night-light-last-coordinates=(-34.757700719942406, -58.399999999999999)
 
 [org/gnome/settings-daemon/plugins/media-keys]
-media=''
-www='<Super>b'
-calculator='<Super>F4'
-terminal=''
 home=''
+calculator='<Super>F4'
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
+media=''
 search='<Super>f'
+www='<Super>b'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
 command='nautilus -w'
@@ -465,7 +501,7 @@ name='nautilus'
 binding='<Super>n'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
-command='kitty  --title=kittyterm /home/ska/.i3/tmux_new_or_attach.sh'
+command='/home/ska/.local/share/scripts/launch-kitty.sh'
 name='terminal'
 binding='<Super>Return'
 
@@ -477,7 +513,6 @@ binding='<Super>c'
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
 command='gnome-terminal'
 name='guakitty'
-binding='<Alt>Return'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
 command='wmctrl -R kittyterm'
@@ -495,7 +530,7 @@ sleep-inactive-ac-timeout=3600
 
 [org/gnome/mutter]
 workspaces-only-on-primary=true
-overlay-key='Super_L'
+overlay-key='Alt_R'
 attach-modal-dialogs=true
 center-new-windows=false
 dynamic-workspaces=false
@@ -553,7 +588,7 @@ name-column-width=250
 show-path=false
 
 [org/gnome/software]
-check-timestamp=int64 1568454386
+check-timestamp=int64 1568538648
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 foreground-color='rgb(131,148,150)'
@@ -563,7 +598,7 @@ scrollbar-policy='never'
 use-theme-colors=false
 background-color='rgb(0,43,54)'
 custom-command='/home/ska/.i3/tmux_new_or_attach.sh'
-font='Operator Mono Lig Light 12'
+font='Fira Code 12'
 login-shell=false
 use-custom-command=false
 
