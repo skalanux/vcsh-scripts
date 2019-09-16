@@ -5,7 +5,7 @@
 !/.local/share
 !/.local/share/scripts
 !/.local/share/scripts/backup-gnome-shell.sh
-!/.local/share/scripts/full-backup.back
+!/.local/share/scripts/full-backup
 !/.local/share/scripts/guakesize.sh
 !/.local/share/scripts/launch-kitty.sh
 !/.local/share/scripts/remove_existing_files.sh

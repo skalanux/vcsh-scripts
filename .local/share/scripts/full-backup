@@ -1,11 +1,17 @@
 [com/ubuntu/update-notifier]
 release-check-time=uint32 1567695064
 
+[desktop/ibus/general/hotkey]
+triggers=['<Control><Super>space']
+
+[desktop/ibus/panel/emoji]
+favorites=['😂', '😁', '℮', 'ᓮ', '🥰', '◫']
+
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/wm/preferences/focus-new-windows'
+saved-pathbar-path='x'
 window-width=800
 window-height=420
-saved-view='/org/gnome/desktop/wm/preferences/focus-new-windows'
+saved-view='/org/gnome/shell/'
 window-is-maximized=true
 
 [apps/guake/general]
@@ -60,14 +66,17 @@ first-start=false
 [org/gtk/settings/file-chooser]
 date-format='regular'
 show-size-column=true
-show-hidden=false
+show-hidden=true
 sidebar-width=209
 sort-column='modified'
-window-position=(2279, 46)
+window-position=(2279, 64)
 sort-order='descending'
 location-mode='path-bar'
 sort-directories-first=true
 window-size=(1203, 902)
+
+[org/gtk/settings/debug]
+enable-inspector-keybinding=true
 
 [org/gtk/settings/color-chooser]
 custom-colors=[(0.57181208053691268, 0.59999999999999998, 0.0, 1.0), (0.52156862745098043, 0.59999999999999998, 0.0, 1.0)]
@@ -123,8 +132,8 @@ background-color='rgb(0,0,0)'
 use-background-color=true
 
 [org/gnome/nautilus/window-state]
-sidebar-width=280
-initial-size=(960, 771)
+sidebar-width=169
+initial-size=(960, 767)
 maximized=false
 
 [org/gnome/nautilus/preferences]
@@ -157,7 +166,7 @@ enable-hot-corners=false
 command-history=['code', 'terminator', 'arandr', 'gparted', 'synapse', 'retoques', 'atajos', 'gnome-terminal', 'pavucontrol', 'cheese', 'kitty', 'r']
 favorite-apps=@as []
 had-bluetooth-devices-setup=false
-enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'gcalc-search@wrowclif.org', 'gTile@vibou', 'dash-to-dock@micxgx.gmail.com', 'dash-to-panel@jderose9.github.com', 'CoverflowAltTab@palatis.blogspot.com', 'EasyScreenCast@iacopodeenosee.gmail.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'labeled_spaces@silverswift', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pomodoro@arun.codito.in', 'gnomenu@panacier.gmail.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'switcher@landau.fi']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'gcalc-search@wrowclif.org', 'gTile@vibou', 'dash-to-dock@micxgx.gmail.com', 'dash-to-panel@jderose9.github.com', 'EasyScreenCast@iacopodeenosee.gmail.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'labeled_spaces@silverswift', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pomodoro@arun.codito.in', 'gnomenu@panacier.gmail.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'switcher@landau.fi']
 
 [org/gnome/shell/keybindings]
 toggle-application-view=['']
@@ -191,7 +200,7 @@ show-trash=false
 show-home=false
 
 [org/gnome/shell/extensions/user-theme]
-name='Nordic'
+name=''
 
 [org/gnome/shell/extensions/EasyScreenCast]
 shortcut-key=['<Super>e']
@@ -246,18 +255,19 @@ hotkeys-overlay-combo='TEMPORARILY'
 dot-color-3='#5294e2'
 taskbar-locked=false
 show-activities-button=false
-show-show-apps-button=false
 show-running-apps=true
+show-show-apps-button=true
 dot-color-4='#5294e2'
 location-clock='STATUSRIGHT'
 focus-highlight-color='#eeeeee'
 dot-color-unfocused-1='#5294e2'
+show-apps-icon-side-padding=16
 animate-show-apps=false
-dot-style-focused='METRO'
 stockgs-keep-dash=false
 secondarymenu-contains-showdetails=false
 trans-use-custom-bg=false
 hot-keys=false
+dot-style-focused='METRO'
 tray-size=0
 trans-use-custom-opacity=false
 dot-color-unfocused-2='#5294e2'
@@ -274,6 +284,7 @@ secondarymenu-contains-appmenu=true
 focus-highlight=true
 show-showdesktop-button=false
 trans-use-custom-gradient=false
+show-apps-icon-file='/home/ska/.local/share/assets/logo-menu.svg'
 animate-window-launch=false
 dot-color-unfocused-4='#5294e2'
 dot-color-2='#5294e2'
@@ -287,8 +298,8 @@ icon-size=uint32 31
 activate-by-key=uint32 2
 onboarding-5=uint32 1
 font-size=uint32 31
-launcher-stats='{"kitty.desktop":1,"org.gnome.Terminal.desktop":7,"code.desktop":3,"spotify_spotify.desktop":1,"org.gnome.Cheese.desktop":1,"org.gnome.tweaks.desktop":11,"ca.desrt.dconf-editor.desktop":2}'
-max-width-percentage=uint32 92
+launcher-stats='{"kitty.desktop":1,"org.gnome.Terminal.desktop":7,"code.desktop":3,"spotify_spotify.desktop":1,"org.gnome.Cheese.desktop":1,"org.gnome.tweaks.desktop":43,"ca.desrt.dconf-editor.desktop":2,"org.midori_browser.Midori.desktop":1,"inkscape.desktop":1}'
+max-width-percentage=uint32 90
 onboarding-3=uint32 1
 never-show-onboarding=true
 onboarding-2=uint32 1
@@ -309,7 +320,7 @@ photo-x-resolution=1184
 photo-y-resolution=656
 
 [org/gnome/desktop/notifications]
-application-children=['firefox', 'update-manager', 'org-gnome-software', 'gnome-power-panel', 'gnome-shell-extension-prefs', 'org-gnome-nautilus', 'chromium-browser', 'gnome-network-panel', 'gnome-control-center', 'org-gnome-terminal', 'apport-gtk', 'org-gnome-tweaks', 'kitty', 'transmission-gtk', 'org-gnome-chromegnomeshell', 'spotify-spotify']
+application-children=['firefox', 'update-manager', 'org-gnome-software', 'gnome-power-panel', 'gnome-shell-extension-prefs', 'org-gnome-nautilus', 'chromium-browser', 'gnome-network-panel', 'gnome-control-center', 'org-gnome-terminal', 'apport-gtk', 'org-gnome-tweaks', 'kitty', 'transmission-gtk', 'org-gnome-chromegnomeshell', 'spotify-spotify', 'org-gnome-fileroller', 'eog']
 
 [org/gnome/desktop/notifications/application/rhythmbox]
 application-id='rhythmbox.desktop'
@@ -319,6 +330,9 @@ application-id='org.gnome.tweaks.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-shell-extension-prefs]
 application-id='gnome-shell-extension-prefs.desktop'
+
+[org/gnome/desktop/notifications/application/eog]
+application-id='eog.desktop'
 
 [org/gnome/desktop/notifications/application/apport-gtk]
 application-id='apport-gtk.desktop'
@@ -338,17 +352,20 @@ application-id='gnome-control-center.desktop'
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-fileroller]
+application-id='org.gnome.FileRoller.desktop'
+
 [org/gnome/desktop/notifications/application/chromium-browser]
 application-id='chromium-browser.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-terminal]
 application-id='org.gnome.Terminal.desktop'
 
-[org/gnome/desktop/notifications/application/org-gnome-chromegnomeshell]
-application-id='org.gnome.ChromeGnomeShell.desktop'
-
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-chromegnomeshell]
+application-id='org.gnome.ChromeGnomeShell.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -386,9 +403,10 @@ focus-mode='click'
 button-layout=':minimize,maximize,close'
 titlebar-font='Ubuntu 11'
 action-double-click-titlebar='toggle-maximize'
-workspace-names=['Web', 'Code', 'Chat']
-num-workspaces=4
+mouse-button-modifier='<Super>'
 auto-raise=true
+num-workspaces=4
+workspace-names=['Web', 'Code', 'Chat']
 
 [org/gnome/desktop/calendar]
 show-weekdate=false
@@ -406,7 +424,7 @@ primary-color='#000000'
 [org/gnome/desktop/sound]
 theme-name='Yaru'
 event-sounds=true
-allow-volume-above-100-percent=true
+allow-volume-above-100-percent=false
 
 [org/gnome/desktop/background]
 picture-options='scaled'
@@ -419,8 +437,8 @@ picture-uri='file:///home/ska/Firefox_wallpaper.png'
 [org/gnome/desktop/interface]
 clock-show-seconds=true
 enable-animations=true
-icon-theme='Yaru'
-gtk-theme='Nordic'
+icon-theme='purple-merged'
+gtk-theme='dark-side'
 font-name='Open Sans 11'
 cursor-theme='Devecoop-Cursor'
 gtk-im-module='gtk-im-context-simple'
@@ -455,10 +473,10 @@ sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gn
 [org/gnome/desktop/input-sources]
 show-all-sources=false
 sources=[('xkb', 'es')]
-xkb-options=@as []
+xkb-options=['caps:ctrl_modifier']
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='mouse'
 
 [org/gnome/system/location]
 enabled=true
@@ -485,7 +503,7 @@ numlock-state='on'
 locate-pointer=true
 
 [org/gnome/settings-daemon/plugins/color]
-night-light-last-coordinates=(-34.757700719942406, -58.399999999999999)
+night-light-last-coordinates=(-34.784698560115189, -58.399999999999999)
 
 [org/gnome/settings-daemon/plugins/media-keys]
 home=''
@@ -530,7 +548,7 @@ sleep-inactive-ac-timeout=3600
 
 [org/gnome/mutter]
 workspaces-only-on-primary=true
-overlay-key='Alt_R'
+overlay-key='Super_L'
 attach-modal-dialogs=true
 center-new-windows=false
 dynamic-workspaces=false
@@ -551,7 +569,7 @@ type='google'
 
 [org/gnome/gedit/plugins/filebrowser]
 tree-view=true
-virtual-root='file:///home/ska/.cache/.fr-DHnRrO'
+virtual-root='file:///home/ska/.icons/Zafiro-Icons-green/apps'
 root='file:///'
 
 [org/gnome/gedit/plugins]
@@ -574,7 +592,7 @@ active-plugins=['rotation', 'vimeo', 'apple-trailers', 'save-file', 'screenshot'
 [org/gnome/file-roller/ui]
 sidebar-width=200
 window-width=600
-window-height=480
+window-height=474
 
 [org/gnome/file-roller/dialogs/extract]
 skip-newer=false
