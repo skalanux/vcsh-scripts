@@ -66,10 +66,10 @@ first-start=false
 [org/gtk/settings/file-chooser]
 date-format='regular'
 show-size-column=true
-show-hidden=true
+show-hidden=false
 sidebar-width=209
 sort-column='modified'
-window-position=(2279, 64)
+window-position=(359, 46)
 sort-order='descending'
 location-mode='path-bar'
 sort-directories-first=true
@@ -152,6 +152,10 @@ window-ratio=(1.7058823529411764, 0.89192399049881232)
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/791d018d-81f9-43d1-bacc-9277d8218c71]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/54d67ca2-d858-4454-ac46-e46774373874]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
@@ -163,7 +167,7 @@ ignore-phase2-ca-cert=false
 [org/gnome/shell]
 app-picker-view=uint32 0
 enable-hot-corners=false
-command-history=['code', 'terminator', 'arandr', 'gparted', 'synapse', 'retoques', 'atajos', 'gnome-terminal', 'pavucontrol', 'cheese', 'kitty', 'r']
+command-history=['code', 'terminator', 'arandr', 'gparted', 'synapse', 'retoques', 'atajos', 'gnome-terminal', 'pavucontrol', 'cheese', 'kitty', 'r', 'mutter']
 favorite-apps=@as []
 had-bluetooth-devices-setup=false
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'gcalc-search@wrowclif.org', 'gTile@vibou', 'dash-to-dock@micxgx.gmail.com', 'dash-to-panel@jderose9.github.com', 'EasyScreenCast@iacopodeenosee.gmail.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'labeled_spaces@silverswift', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pomodoro@arun.codito.in', 'gnomenu@panacier.gmail.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'switcher@landau.fi']
@@ -293,20 +297,21 @@ isolate-workspaces=false
 
 [org/gnome/shell/extensions/switcher]
 onboarding-4=uint32 1
-show-launcher=['<Super>x']
 icon-size=uint32 31
-activate-by-key=uint32 2
-onboarding-5=uint32 1
-font-size=uint32 31
-launcher-stats='{"kitty.desktop":1,"org.gnome.Terminal.desktop":7,"code.desktop":3,"spotify_spotify.desktop":1,"org.gnome.Cheese.desktop":1,"org.gnome.tweaks.desktop":43,"ca.desrt.dconf-editor.desktop":2,"org.midori_browser.Midori.desktop":1,"inkscape.desktop":1}'
+matching=uint32 1
 max-width-percentage=uint32 90
+onboarding-2=uint32 1
+show-launcher=['<Primary>space']
+onboarding-5=uint32 1
+launcher-stats='{"kitty.desktop":1,"org.gnome.Terminal.desktop":7,"code.desktop":3,"spotify_spotify.desktop":1,"org.gnome.Cheese.desktop":1,"org.gnome.tweaks.desktop":48,"ca.desrt.dconf-editor.desktop":2,"org.midori_browser.Midori.desktop":1,"inkscape.desktop":1}'
+activate-by-key=uint32 2
+activate-after-ms=uint32 100
+font-size=uint32 31
 onboarding-3=uint32 1
 never-show-onboarding=true
-onboarding-2=uint32 1
 show-switcher=['<Super>w']
-matching=uint32 1
-onboarding-1=uint32 1
 ordering=uint32 1
+onboarding-1=uint32 1
 
 [org/gnome/shell/overrides]
 edge-tiling=false
@@ -383,6 +388,7 @@ application-id='gnome-initial-setup.desktop'
 application-id='update-manager.desktop'
 
 [org/gnome/desktop/peripherals/touchpad]
+natural-scroll=false
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/wm/keybindings]
@@ -427,7 +433,7 @@ event-sounds=true
 allow-volume-above-100-percent=false
 
 [org/gnome/desktop/background]
-picture-options='scaled'
+picture-options='centered'
 color-shading-type='solid'
 primary-color='#2c2c00001e1e'
 secondary-color='#2c001e'
@@ -476,7 +482,7 @@ sources=[('xkb', 'es')]
 xkb-options=['caps:ctrl_modifier']
 
 [org/gnome/control-center]
-last-panel='mouse'
+last-panel='background'
 
 [org/gnome/system/location]
 enabled=true
@@ -503,15 +509,16 @@ numlock-state='on'
 locate-pointer=true
 
 [org/gnome/settings-daemon/plugins/color]
-night-light-last-coordinates=(-34.784698560115189, -58.399999999999999)
+night-light-last-coordinates=(-34.611099280057594, -58.384500000000003)
 
 [org/gnome/settings-daemon/plugins/media-keys]
-home=''
-calculator='<Super>F4'
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
 media=''
-search='<Super>f'
 www='<Super>b'
+calculator='<Super>F4'
+terminal=''
+home=''
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
+search='<Super>f'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
 command='nautilus -w'
@@ -548,7 +555,7 @@ sleep-inactive-ac-timeout=3600
 
 [org/gnome/mutter]
 workspaces-only-on-primary=true
-overlay-key='Super_L'
+overlay-key='Super_R'
 attach-modal-dialogs=true
 center-new-windows=false
 dynamic-workspaces=false
@@ -606,7 +613,7 @@ name-column-width=250
 show-path=false
 
 [org/gnome/software]
-check-timestamp=int64 1568538648
+check-timestamp=int64 1568645080
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 foreground-color='rgb(131,148,150)'
